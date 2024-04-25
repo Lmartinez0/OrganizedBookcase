@@ -12,7 +12,7 @@ let buttonC
 let dropA = false;
 
 function setup() {
-  createCanvas(windowWidth,500);
+  createCanvas(windowWidth, 400);
   // Pick colors randomly
   r = random(255);
   g = random(255);
@@ -82,6 +82,9 @@ function Color() {
     b = random(255);
 }
 // Reset book Position
-function Organized(){
- rect(xA, yA, 30, 150);
+function organized() {
+  dropA = false; // Stop dropping Book A
+  yA = y + 50; // Reset Book A y position
+  velocityA = 0; // Reset Book A velocity
 }
+
